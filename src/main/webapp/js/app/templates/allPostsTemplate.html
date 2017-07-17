@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-12">
+        <ul class="list-group">
+        <!-- ko foreach: posts -->
+            <li class="list-group-item">
+                <h1 data-bind="text: postName"></h1>
+                <p data-bind="text: postContent"></p>
+                <span>Date: </span><span data-bind="text: createdOn"></span>
+                <span>By: </span><span data-bind="text: createdBy"></span>
+        <!-- /ko -->
+        </ul>
+    </div>
+</div>
